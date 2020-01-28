@@ -29,9 +29,14 @@ a {
     width: 120px;
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+a:hover {
+    color: aquamarine;
+    transition: 1.5s;
 }
 
 #sec1 {
@@ -63,14 +68,22 @@ h2 {
     text-align: center;
     padding: 0px;
 }
-
-h1 {
-    margin: 100px;
-    margin-top: 10px;
+.header {
+    position: relative;
+    margin: 240px auto;
+    margin-top: 80px;
+    width: 900px;
+    height: 300px;
     text-align: center;
-    padding: 0px;
-    padding-top: 40px;
+    border: solid 1px black;
+    border-radius: 10px;
 }
+.header:hover {
+    background-color: aqua;
+    opacity: 50%;
+    transition: 2s;
+}
+
 .background {
     background: url(../image/bd.jpg) fixed;
     background-repeat: no-repeat;
