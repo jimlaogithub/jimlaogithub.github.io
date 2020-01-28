@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    float: right;
+    height: 50px;
+}
+
+a {
+    padding: 20px;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#sec1 {
+    height: 720px;
+    display: inline-block;
+    width: 100%;
+}
+
+#sec2 {
+    height: 720px;
+    display: inline-block;
+    width: 100%;
+}
+
+#sec3 {
+    height: 720px;
+    display: inline-block;
+    width: 100%;
+}
+
+#sec4 {
+    height: 720px;
+    display: inline-block;
+    width: 100%;
+}
+
+h2 {
+    margin: 100px;
+    text-align: center;
+    padding: 0px;
+}
+
+h1 {
+    margin: 100px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0px;
+    padding-top: 40px;
+}
+.background {
+    background: url(../image/bd.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
