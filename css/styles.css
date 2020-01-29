@@ -75,13 +75,49 @@ h2 {
     width: 900px;
     height: 300px;
     text-align: center;
-    border: solid 1px black;
     border-radius: 10px;
 }
-.header:hover {
-    background-color: aqua;
-    opacity: 50%;
-    transition: 2s;
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+.me {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 10px;
+}
+.logo:hover {
+    border-radius: 20%;
+}
+.me:hover {
+    bottom: 100px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.intro h3{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 30px;
+}
+
+.intro h1 {
+    margin-top: 100px;
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 70px;
+    
 }
 
 .background {
@@ -90,3 +126,95 @@ h2 {
     background-size: 100% 100%;
 
 }
+
+.container {
+    position: relative;
+    margin: 240px auto;
+    margin-top: 80px;
+    width: 1200px;
+    height: 300px;
+    text-align: center;
+    
+}
+
+.container .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.container .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.container .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fa {
+    height: 50%;
+    width: 60%;
+}
+
+.container .box:hover .icon .fa  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    
+
+}
+
+.container .box .content {
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 90ms;
+    
+}
+
+.container .box:hover .content {
+    visibility: visible;
+    top: 100px;
+}
+
+.container .box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 24px;
+}
+
+.container .box .content p {
+    margin: 0;
+    padding: 0;
+    color: black;
+
+}
+
+
+
+
